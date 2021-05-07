@@ -9,7 +9,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     restaurant_id = req.params.get('restaurant_id')
     plate_name=req.params.get('plate_name')
-    plate_price=int(req.params.get('plate_price'))
+    plate_price=req.params.get('plate_price')
     plate_category=req.params.get('plate_category')
     if not restaurant_id or plate_name or plate_price or plate_category:
         try:

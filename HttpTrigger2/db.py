@@ -5,7 +5,7 @@ platesDb = [
             {
                 'plate_id': 101,
                 'plate_name': 'chuleta valluna',
-                'price':54000,
+                'price': '54000',
                 'plate_category':'plato fuerte'
             }
         ]
@@ -17,7 +17,7 @@ platesDb = [
             {
                 'plate_id': 201,
                 'plate_name': 'Ensalada Cesar',
-                'price':28000,
+                'price': '28000',
                 'plate_category':'entrnate'
             }
         ]
