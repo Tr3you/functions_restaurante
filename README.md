@@ -8,3 +8,11 @@ Crearemos 3 funciones que funcionaran asi.
 URI: https://adminrestaurants.azurewebsites.net/api/HttpTrigger1?restaurant_name= **nombre del restaurante**&branding_color=**color de la marca**&speciality=**especialidad**&main_chef_name=**nombre del chef**
 
 Los valores que estan en negritas se deben cambiar por el valor correspondiente sin comillas. si el valor tiene espacios use %20 para representarlo.
+
+**2.** Una funcion que se encargara de agregar platos al menu, se debe pasar el ID del restaurante, el nombre del plato, el valor en pesos colombianos, se debe especificar si es un entrante, un plato fuerte, un postre o una bebida, de la misma forma se debe validar que el ID del restaurante exista y que los parametros que se pasen sean coherente de lo contrario se debe devolver un error.
+
+URI:https://adminrestaurants.azurewebsites.net/api/HttpTrigger2?restaurant_id= **ID del restaurante**&plate_name=**nombre del plato**&plate_price=**precio del plato**&plate_category=**categoria del plato**
+
+ID de restaurante de prueba: **34567** y **78903**
+
+La opciones para la categoria son: Entrada, Plato fuerte, postre o bebida
