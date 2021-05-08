@@ -19,12 +19,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         else:
             restaurant_id = req.params.get('restaurant_id')
             plate_name=req.params.get('plate_name')
-            plate_price=int(req.params.get('plate_price'))
+            plate_price=req.params.get('plate_price')
             plate_category=req.params.get('plate_category')
 
     if restaurant_id and plate_name and plate_price and plate_category:
         plate_id = create_plate_id()
-        response_add_plate = add_plate(restaurant_id, plate_id, plate_name, plate_price, plate_category)
+        response_add_plate = add_plate(int(restaurant_id), plate_id, plate_name, plate_price, plate_category)
         return func.HttpResponse(response_add_plate)
     else:
         return func.HttpResponse(
