@@ -17,6 +17,6 @@ ID de restaurante de prueba: **34567** y **78903**
 
 La opciones para la categoria son: Entrada, Plato fuerte, postre o bebida
 
-**3.** Una funcion que recibira un ID de restaurante y un tipo de info que quiera recibir, como respuesta la funcion devolvera solola info que el usuario a solicitado sobre el restaurante. La informacion que se puede solicitar es el nombre del chef en turno, la carta vigente(todos los platos con nombre, precio y categoria) y hora de cierre del dia vigente.
+**3.** Una funcion que recibira un ID de restaurante y un tipo de info que quiera recibir, como respuesta la funcion devolvera solo la info que el usuario a solicitado sobre el restaurante. La informacion que se puede solicitar es el nombre del chef en turno, la carta vigente(todos los platos con nombre, precio y categoria) o hora de cierre del dia vigente.
 
-URI: 
+URI: https://adminrestaurants.azurewebsites.net/api/HttpTrigger3?
